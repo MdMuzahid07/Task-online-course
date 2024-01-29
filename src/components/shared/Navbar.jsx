@@ -9,6 +9,7 @@ const styles = {
 
 const Navbar = () => {
   const [dropDown, setDropdown] = useState(false);
+  const [userDrop, setUserDrop] = useState(false);
 
   return (
     <nav className="border-b sticky top-0 right-0 bg-white w-full h-16 md:h-20 flex items-center ">
@@ -73,7 +74,10 @@ const Navbar = () => {
                 </svg>
               </button>
 
-              <button className={styles.btn}>
+              <button
+                onClick={() => setUserDrop(!userDrop)}
+                className={styles.btn}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -88,6 +92,12 @@ const Navbar = () => {
                     d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
                   />
                 </svg>
+                <Dropdown
+                  active={userDrop}
+                  styles={"absolute right-0 top-16 rounded-2xl text-left"}
+                >
+                  <h1 className="text-3xl font-bold">Hello, User</h1>
+                </Dropdown>
               </button>
 
               <button
