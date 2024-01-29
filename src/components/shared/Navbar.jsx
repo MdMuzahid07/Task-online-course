@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom";
 import { navLinks } from "../../constants";
+import Dropdown from "../ui/Dropdown";
+import { useState } from "react";
 
 const styles = {
   btn: "w-9 h-9 rounded-full flex justify-center items-center border active:border-red-500",
 };
 
 const Navbar = () => {
+  const [dropDown, setDropdown] = useState(false);
+
   return (
-    <nav className="border-b sticky top-0 right-0 bg-white w-full h-16 md:h-20 flex items-center">
+    <nav className="border-b sticky top-0 right-0 bg-white w-full h-16 md:h-20 flex items-center ">
       <div className="max-w-7xl mx-auto w-full px-4 xl:px-0">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center relative">
           <div>
             {/* <img src="" alt="" /> */}
             <h1 className="text-2xl md:text-4xl font-bold text-red-500">
@@ -84,6 +88,57 @@ const Navbar = () => {
                     d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
                   />
                 </svg>
+              </button>
+
+              <button
+                onClick={() => setDropdown(!dropDown)}
+                className={`${styles.btn} flex md:hidden`}
+              >
+                {dropDown ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18 18 6M6 6l12 12"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                )}
+                <Dropdown
+                  active={dropDown}
+                  styles={"absolute top-16 rounded-2xl right-0"}
+                >
+                  <ul className="font-semibold text-slate-900 text-2xl text-left">
+                    {navLinks.map(({ label, value }) => {
+                      return (
+                        <li key={value} className="mb-5 hover:text-red-500">
+                          <Link to={value}>{label}</Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </Dropdown>
               </button>
             </div>
           </div>
