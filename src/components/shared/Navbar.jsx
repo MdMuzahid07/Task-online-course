@@ -13,11 +13,11 @@ const Navbar = () => {
           <div>
             {/* <img src="" alt="" /> */}
             <h1 className="text-2xl md:text-4xl font-bold text-red-500">
-              Logo
+              CourseBuy
             </h1>
           </div>
           <div className="flex items-center">
-            <ul className="md:flex items-center hidden gap-4 font-semibold text-slate-900 text-lg md:border-r-2 border-slate-200 pr-6 mr-6 h-10">
+            <ul className="md:flex items-center hidden gap-7 font-semibold text-slate-900 text-xl md:border-r-2 border-slate-200 pr-6 mr-6 h-10">
               {navLinks.map(({ label, value }) => {
                 return (
                   <li key={value}>
