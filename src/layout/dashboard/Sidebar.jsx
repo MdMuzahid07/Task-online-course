@@ -38,7 +38,6 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             to="/dashboard"
             onClick={() => {
               setActive("/dashboard/home");
-              setIsSidebarOpen(false);
             }}
             className={
               pathname && active === "/dashboard/home"
@@ -53,7 +52,6 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           <Link
             onClick={() => {
               setActive("/dashboard/enrolled");
-              setIsSidebarOpen(false);
             }}
             to="enrolled"
             className={
@@ -69,9 +67,8 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           <Link
             onClick={() => {
               setActive("");
-              setIsSidebarOpen(false);
             }}
-            to=""
+            to="/certification"
             className={
               pathname && active === "" ? "text-red-500" : "text-white"
             }
