@@ -33,11 +33,12 @@ const Navbar = () => {
             </ul>
 
             <div className="flex items-center gap-2 sm:gap-4">
-              <label className="relative" htmlFor="">
+              <label className="relative" htmlFor="search">
                 <input
                   type="text"
                   className="border border-slate-150 sm:py-1 w-28 sm:w-32 md:w-44 px-4 rounded-full focus:outline-none focus:border-red-500"
                   placeholder="Search"
+                  id="search"
                 />
                 <span className="absolute right-2 top-1">
                   <svg
