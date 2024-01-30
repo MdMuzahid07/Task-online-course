@@ -16,7 +16,7 @@ const Courses = () => {
         </div>
       </section>
       <section
-        className={`${globalStyles.layoutWidth} my-32 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 md:gap-10`}
+        className={`${globalStyles.layoutWidth} my-32 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7 md:gap-10`}
       >
         <CourseCard />
         <CourseCard />
