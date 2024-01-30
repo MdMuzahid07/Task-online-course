@@ -3,7 +3,7 @@ import { globalStyles } from "../../constants";
 
 const Footer = () => {
   return (
-    <footer className="bg-texture mt-20 w-full">
+    <footer className="bg-texture w-full">
       <div className="bg-slate-300 bg-opacity-25">
         <div
           className={`${globalStyles.layoutWidth} py-24 flex justify-between flex-wrap gap-16`}

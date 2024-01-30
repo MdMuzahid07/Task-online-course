@@ -1,14 +1,23 @@
+import { useNavigate } from "react-router-dom";
 const styles = {
   chips:
     "px-3 h-7 rounded-full flex justify-center items-center text-sm bg-white",
 };
 
 const CourseCard = () => {
+  const navigate = useNavigate();
   const img =
     "url(https://demo.edublink.co/wp-content/uploads/2023/05/girl-1.webp)";
 
+  const handleClick = () => {
+    navigate("/courseDetails");
+  };
+
   return (
-    <div className="hover:scale-[0.8] transition ease-linear duration-100 delay-200 cursor-pointer">
+    <div
+      onClick={() => handleClick()}
+      className="hover:scale-[0.8] transition ease-linear duration-100 delay-200 cursor-pointer"
+    >
       <div
         style={{ backgroundImage: img }}
         className={`bg-cover sm:max-w-96 w-full h-[245px] rounded-3xl bg-black p-4 object-center relative`}

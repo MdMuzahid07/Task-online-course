@@ -12,3 +12,9 @@
     background-size: cover;
     background-position: bottom;
 }
+
+.detailsBg{
+background-image: url("./assets/images/courses-details-bg.png");
+    background-size: cover;
+    background-position: center;
+}
