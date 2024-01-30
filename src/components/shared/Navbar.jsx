@@ -4,7 +4,7 @@ import Dropdown from "../ui/Dropdown";
 import { useState } from "react";
 
 const styles = {
-  btn: "w-9 h-9 rounded-full flex justify-center items-center border active:border-red-500",
+  btn: "sm:w-9 w-7 sm:h-9 h-7 rounded-full flex justify-center items-center border active:border-red-500",
 };
 
 const Navbar = () => {
@@ -12,12 +12,12 @@ const Navbar = () => {
   const [userDrop, setUserDrop] = useState(false);
 
   return (
-    <nav className="border-b sticky top-0 right-0 bg-white w-full h-16 md:h-20 flex items-center ">
+    <nav className="border-b sticky top-0 right-0 bg-white w-full h-16 md:h-20 flex items-center z-50">
       <div className="max-w-7xl mx-auto w-full px-4 xl:px-0">
         <div className="flex justify-between items-center relative">
           <div>
             {/* <img src="" alt="" /> */}
-            <h1 className="text-2xl md:text-4xl font-bold text-red-500">
+            <h1 className="text-xl md:text-4xl font-bold text-red-500">
               CourseBuy
             </h1>
           </div>
@@ -32,11 +32,11 @@ const Navbar = () => {
               })}
             </ul>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4">
               <label className="relative" htmlFor="">
                 <input
                   type="text"
-                  className="border border-slate-150 py-1 w-32 md:w-44 px-4 rounded-full focus:outline-none focus:border-red-500"
+                  className="border border-slate-150 sm:py-1 w-28 sm:w-32 md:w-44 px-4 rounded-full focus:outline-none focus:border-red-500"
                   placeholder="Search"
                 />
                 <span className="absolute right-2 top-1">
@@ -46,7 +46,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6 active:w-5 active:h-5 cursor-pointer"
+                    className="w-4 sm:w-6 h-4 sm:h-6 active:w-5 active:h-5 cursor-pointer"
                   >
                     <path
                       strokeLinecap="round"
@@ -64,7 +64,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-5 h-5"
+                  className="sm:w-5 w-4 sm:h-5 h-4"
                 >
                   <path
                     strokeLinecap="round"
@@ -84,7 +84,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-5 h-5"
+                  className="sm:w-5 w-4 sm:h-5 h-4"
                 >
                   <path
                     strokeLinecap="round"
@@ -111,7 +111,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="sm:w-5 w-4 sm:h-5 h-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -126,7 +126,7 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-5 h-5"
+                    className="sm:w-5 w-4 sm:h-5 h-4"
                   >
                     <path
                       strokeLinecap="round"
