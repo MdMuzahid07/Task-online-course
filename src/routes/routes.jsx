@@ -5,6 +5,8 @@ import Dashboard from "../layout/dashboard/Dashboard";
 import Courses from "../pages/Courses";
 import Contact from "../pages/Contact";
 import CourseDetails from "../pages/CourseDetails";
+import Home from "../pages/dashboard/Home";
+import EnrolledCourses from "../pages/dashboard/EnrolledCourses";
 
 const routes = createBrowserRouter([
   {
@@ -32,7 +34,16 @@ const routes = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
-    children: [],
+    children: [
+      {
+        path: "/dashboard",
+        element: <Home />,
+      },
+      {
+        path: "enrolled",
+        element: <EnrolledCourses />,
+      },
+    ],
   },
 ]);
 

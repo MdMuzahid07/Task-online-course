@@ -98,6 +98,13 @@ const Navbar = () => {
                   styles={"absolute right-0 top-16 rounded-3xl text-left"}
                 >
                   <h1 className="text-3xl font-bold">Hello, User</h1>
+                  <ul className="mt-5">
+                    <li>
+                      <Link to="/dashboard" className="text-lg hover:text-red">
+                        My Dashboard
+                      </Link>
+                    </li>
+                  </ul>
                 </Dropdown>
               </button>
 
