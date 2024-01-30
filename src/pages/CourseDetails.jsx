@@ -56,7 +56,7 @@ const CourseDetails = () => {
 
       <section className={globalStyles.layoutWidth}>
         <div className="grid lg:grid-cols-9 gap-6 pt-10 pb-20">
-          <main className="lg:col-span-6">
+          <main className="lg:col-span-6 lg:order-first order-last">
             <h1 className="text-2xl sm:text-4xl font-semibold text-red-500">
               About this course
             </h1>
@@ -101,7 +101,7 @@ const CourseDetails = () => {
               </Accordion>
             </div>
           </main>
-          <aside className="lg:col-span-3 max-h-[1000px] lg:max-h-[750px] bg-white rounded-3xl p-7 md:-mt-44">
+          <aside className="lg:col-span-3 order-first lg:order-last max-h-[1000px] lg:max-h-[750px] bg-white rounded-3xl p-7 md:-mt-44">
             <img
               src="https://demo.edublink.co/wp-content/uploads/2023/05/girl-1.webp"
               alt="course-banner"
