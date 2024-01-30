@@ -1,3 +1,4 @@
+import Accordion from "../components/ui/Accordion";
 import { globalStyles } from "../constants";
 import Button from "./Button";
 
@@ -55,7 +56,7 @@ const CourseDetails = () => {
 
       <section className={globalStyles.layoutWidth}>
         <div className="grid lg:grid-cols-9 gap-6 pt-10 pb-20">
-          <div className="lg:col-span-6">
+          <main className="lg:col-span-6">
             <h1 className="text-2xl sm:text-4xl font-semibold text-red-500">
               About this course
             </h1>
@@ -67,8 +68,17 @@ const CourseDetails = () => {
               veniam cupiditate doloremque. Itaque unde rerum facere sequi est
               rem? Tenetur cum voluptatibus aperiam!
             </p>
-          </div>
-          <div className="lg:col-span-3 max-h-[1000px] lg:max-h-[750px] bg-white rounded-3xl p-7 md:-mt-44">
+
+            <p className="text-xl mt-10">
+              <span className="font-bold">Course Pre-requisites: </span>Basic
+              Business Analytics, Familiar with Marketing
+            </p>
+
+            <div className="mt-10">
+              <Accordion title={"title"} />
+            </div>
+          </main>
+          <aside className="lg:col-span-3 max-h-[1000px] lg:max-h-[750px] bg-white rounded-3xl p-7 md:-mt-44">
             <img
               src="https://demo.edublink.co/wp-content/uploads/2023/05/girl-1.webp"
               alt="course-banner"
@@ -102,7 +112,7 @@ const CourseDetails = () => {
               </li>
             </ul>
             <Button>Enroll</Button>
-          </div>
+          </aside>
         </div>
       </section>
     </div>
