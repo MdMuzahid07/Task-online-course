@@ -27,7 +27,7 @@ const Dashboard = () => {
             <div
               className={` ${
                 isSidebarOpen ? "max-w-7xl" : "max-w-screen-2xl"
-              } min-h-screen w-full mx-auto`}
+              } min-h-screen w-full mx-auto px-4 lg:px-0`}
             >
               <Outlet />
             </div>
