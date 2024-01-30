@@ -4,7 +4,7 @@ const Dropdown = ({ children, styles, active }) => {
     <div
       className={`${styles} ${
         active ? "block" : "hidden"
-      } w-[300px] h-[400px] px-5 py-7 bg-red-100 `}
+      } w-[300px] h-[400px] px-5 py-7 bg-white border`}
     >
       {children}
     </div>

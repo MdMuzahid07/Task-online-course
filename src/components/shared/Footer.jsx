@@ -1,10 +1,13 @@
 import { appStore, playStore } from "../../assets";
+import { globalStyles } from "../../constants";
 
 const Footer = () => {
   return (
     <footer className="bg-texture mt-20 w-full">
       <div className="bg-slate-300 bg-opacity-25">
-        <div className="max-w-7xl mx-auto py-24 px-4 xl:px-0 flex justify-between flex-wrap gap-16">
+        <div
+          className={`${globalStyles.layoutWidth} py-24 flex justify-between flex-wrap gap-16`}
+        >
           <ul>
             <li className="text-2xl mb-8">About US</li>
             <li className="font-bold mb-5 cursor-pointer hover:underline">
@@ -60,7 +63,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="bg-black py-2">
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row   md:justify-between md:items-center gap-3 text-md text-red-500">
+          <div
+            className={`${globalStyles.layoutWidth} flex flex-col md:flex-row   md:justify-between md:items-center gap-3 text-md text-red-500`}
+          >
             <p className="order-last md:order-first">
               Copyright | All Right Reserved 2024 by CourseBuy
             </p>

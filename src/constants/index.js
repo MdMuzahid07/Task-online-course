@@ -13,5 +13,9 @@ const navLinks = [
     }
 ];
 
+const globalStyles = {
+    layoutWidth: "max-w-7xl mx-auto px-4 xl:px-0"
+};
 
-export { navLinks };
+
+export { navLinks, globalStyles };

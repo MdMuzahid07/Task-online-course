@@ -94,7 +94,7 @@ const Navbar = () => {
                 </svg>
                 <Dropdown
                   active={userDrop}
-                  styles={"absolute right-0 top-16 rounded-2xl text-left"}
+                  styles={"absolute right-0 top-16 rounded-3xl text-left"}
                 >
                   <h1 className="text-3xl font-bold">Hello, User</h1>
                 </Dropdown>
@@ -137,7 +137,7 @@ const Navbar = () => {
                 )}
                 <Dropdown
                   active={dropDown}
-                  styles={"absolute top-16 rounded-2xl right-0"}
+                  styles={"absolute top-16 rounded-3xl right-0"}
                 >
                   <ul className="font-semibold text-slate-900 text-2xl text-left">
                     {navLinks.map(({ label, value }) => {
