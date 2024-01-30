@@ -75,7 +75,30 @@ const CourseDetails = () => {
             </p>
 
             <div className="mt-10">
-              <Accordion title={"title"} />
+              <Accordion title={"Syllabus"}>
+                <ul>
+                  <li className="mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto, itaque!
+                  </li>
+                  <li className="mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto, itaque!
+                  </li>
+                  <li className="mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto, itaque!
+                  </li>
+                  <li className="mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto, itaque!
+                  </li>
+                  <li className="mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Architecto, itaque!
+                  </li>
+                </ul>
+              </Accordion>
             </div>
           </main>
           <aside className="lg:col-span-3 max-h-[1000px] lg:max-h-[750px] bg-white rounded-3xl p-7 md:-mt-44">
@@ -111,7 +134,7 @@ const CourseDetails = () => {
                 <span className="font-semibold">Location: </span>Online
               </li>
             </ul>
-            <Button>Enroll</Button>
+            <Button>Enroll Now</Button>
           </aside>
         </div>
       </section>

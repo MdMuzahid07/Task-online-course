@@ -70,9 +70,9 @@ const Footer = () => {
               Copyright | All Right Reserved 2024 by CourseBuy
             </p>
             <ul className="flex items-center gap-5 order-first md:order-last">
-              <li>Facebook</li>
-              <li>Linkedin</li>
-              <li>Twitter</li>
+              <li className="cursor-pointer hover:text-white">Facebook</li>
+              <li className="cursor-pointer hover:text-white">Linkedin</li>
+              <li className="cursor-pointer hover:text-white">Twitter</li>
             </ul>
           </div>
         </div>
