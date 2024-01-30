@@ -1,4 +1,5 @@
 import CourseCard from "../components/ui/CourseCard";
+import Pagination from "../components/ui/Pagination";
 import { globalStyles } from "../constants";
 
 const Courses = () => {
@@ -15,14 +16,22 @@ const Courses = () => {
           </div>
         </div>
       </section>
-      <section
-        className={`${globalStyles.layoutWidth} my-32 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7 md:gap-10`}
-      >
-        <CourseCard />
-        <CourseCard />
-        <CourseCard />
-        <CourseCard />
-        <CourseCard />
+      <section className={`${globalStyles.layoutWidth} my-32`}>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7 md:gap-10">
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+        </div>
+        <Pagination />
       </section>
     </main>
   );

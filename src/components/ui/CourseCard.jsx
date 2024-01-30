@@ -8,7 +8,7 @@ const CourseCard = () => {
     "url(https://demo.edublink.co/wp-content/uploads/2023/05/girl-1.webp)";
 
   return (
-    <div className="hover:scale-75 transition ease-linear duration-100 delay-100 cursor-pointer">
+    <div className="hover:scale-[0.8] transition ease-linear duration-100 delay-200 cursor-pointer">
       <div
         style={{ backgroundImage: img }}
         className={`bg-cover sm:max-w-96 w-full h-[245px] rounded-3xl bg-black p-4 object-center relative`}
