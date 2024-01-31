@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const EnrollCourseCard = () => {
+  const [completed, setCompleted] = useState(false);
+
   return (
     <div className=" md:max-w-[800PX] w-full max-h-[800px] md:max-h-[245px] rounded-3xl bg-white hover:drop-shadow p-4 object-center relative  transition delay-100 duration-100 ease-linear mb-5 md:mb-0">
       <div className="flex flex-col md:flex-row md:gap-4">
@@ -25,9 +29,22 @@ const EnrollCourseCard = () => {
               style={{ width: "75%" }}
             ></span>
           </div>
-          <button className="mt-4 bg-black text-red-500 font-bold rounded-full px-3 py-1">
-            Continue
-          </button>
+          <div className="flex items-center gap-4 mt-4">
+            <button className=" bg-black text-red-500 font-bold rounded-full px-3 py-1">
+              Continue
+            </button>
+            <button
+              onClick={() => setCompleted(!completed)}
+              className="flex items-center gap-2 bg-white border font-bold rounded-full px-3 py-1"
+            >
+              <div
+                className={`w-5 h-5 border  ${
+                  !completed ? "bg-white" : "bg-green-400"
+                } rounded-full`}
+              ></div>{" "}
+              Completed
+            </button>
+          </div>
         </div>
       </div>
     </div>
