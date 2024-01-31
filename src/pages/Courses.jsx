@@ -1,8 +1,24 @@
+import { useEffect, useState } from "react";
 import CourseCard from "../components/ui/CourseCard";
 import Pagination from "../components/ui/Pagination";
 import { globalStyles } from "../constants";
 
 const Courses = () => {
+  const [coursesData, setCoursesData] = useState(null);
+
+  useEffect(() => {
+    const fetchCourses = async () => {
+      try {
+        const response = await fetch("/public/data.json");
+        const data = await response.json();
+        setCoursesData(data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+    fetchCourses();
+  }, []);
+
   return (
     <main className="bg-slate-50">
       <section className="courses-bg">
@@ -18,18 +34,9 @@ const Courses = () => {
       </section>
       <section className={`${globalStyles.layoutWidth} py-32 `}>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7 md:gap-10">
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
+          {coursesData?.map((data) => (
+            <CourseCard key={data.id} data={data} />
+          ))}
         </div>
         <Pagination />
       </section>

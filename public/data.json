@@ -1,0 +1,381 @@
+[
+{
+  "id": 1,
+  "price":45,
+  "name": "Advanced React Development",
+  "instructor": "Jane Smith",
+  "description": "Take your React skills to the next level with advanced development concepts.",
+  "enrollmentStatus": "Closed",
+  "thumbnail": "https://img.freepik.com/free-photo/ai-site-helping-with-software-production_1268-21620.jpg?w=1060&t=st=1706704845~exp=1706705445~hmac=7a1f03a7213284c0ac3fd6bdf4d327bbad86864e55cd70f5807566a9671ce114",
+  "duration": "10 weeks",
+  "schedule": "Mondays and Wednesdays, 7:00 PM - 9:00 PM",
+  "location": "Online",
+  "prerequisites": ["Intermediate React knowledge", "Experience with state management"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Advanced React Components",
+      "content": "Deep dive into complex React component patterns and architecture."
+    },
+    {
+      "week": 2,
+      "topic": "State Management Strategies",
+      "content": "Explore various state management solutions for large-scale applications."
+    }
+  ],
+  "students": [
+    {
+      "id": 201,
+      "name": "Charlie Brown",
+      "email": "charlie@example.com"
+    },
+    {
+      "id": 202,
+      "name": "Diana Miller",
+      "email": "diana@example.com"
+    }
+  ]
+},
+{
+  "id": 2,
+  "price":75,
+  "name": "Full Stack Web Development",
+  "instructor": "Alice Smith",
+  "description": "Comprehensive course covering both frontend and backend development.",
+  "enrollmentStatus": "Open",
+  "thumbnail": "https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?w=900&t=st=1706704886~exp=1706705486~hmac=7699616b3535842f6bcac7b14716dbcac11dcaa02419ca8986491f4b0916e0dc",
+  "duration": "12 weeks",
+  "schedule": "Wednesdays and Fridays, 6:30 PM - 8:30 PM",
+  "location": "Online",
+  "prerequisites": ["HTML, CSS, and JavaScript basics", "Familiarity with databases"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Introduction to Full Stack Development",
+      "content": "Overview of frontend and backend technologies."
+    },
+    {
+      "week": 2,
+      "topic": "Building a RESTful API",
+      "content": "Creating a RESTful API using Node.js and Express."
+    }
+  ],
+  "students": [
+    {
+      "id": 301,
+      "name": "Eva Johnson",
+      "email": "eva@example.com"
+    },
+    {
+      "id": 302,
+      "name": "Frank Miller",
+      "email": "frank@example.com"
+    }
+  ]
+}
+,
+{
+  "id": 3,
+  "price":95,
+  "name": "Machine Learning Fundamentals",
+  "instructor": "Dr. Samantha Rodriguez",
+  "description": "Explore the basics of machine learning algorithms and applications.",
+  "enrollmentStatus": "Open",
+  "thumbnail": "https://img.freepik.com/free-photo/3d-rendering-biorobots-concept_23-2149524399.jpg?w=826&t=st=1706704929~exp=1706705529~hmac=fe0c51c60c15e41961df9222f1d5059ce3de395a7ef4ebb4ecdaceb853a45bc4",
+  "duration": "10 weeks",
+  "schedule": "Tuesdays and Thursdays, 7:00 PM - 9:00 PM",
+  "location": "Online",
+  "prerequisites": ["Basic understanding of statistics", "Familiarity with Python"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Introduction to Machine Learning",
+      "content": "Understanding the foundations of machine learning and its types."
+    },
+    {
+      "week": 2,
+      "topic": "Supervised Learning",
+      "content": "Exploring supervised learning algorithms like linear regression and decision trees."
+    }
+  ],
+  "students": [
+    {
+      "id": 401,
+      "name": "Grace Wilson",
+      "email": "grace@example.com"
+    },
+    {
+      "id": 402,
+      "name": "Henry Davis",
+      "email": "henry@example.com"
+    }
+  ]
+}
+,
+{
+  "id": 4,
+  "price":134,
+  "name": "Mobile App Design and Usability",
+  "instructor": "Professor Alex Thompson",
+  "description": "Learn the principles of mobile app design and ensure a great user experience.",
+  "enrollmentStatus": "Open",
+  "thumbnail": "https://img.freepik.com/free-vector/realistic-ui-ux-background_23-2149046824.jpg?w=900&t=st=1706704966~exp=1706705566~hmac=5bbad680d923c3219c8f14c79a93ddcbb90a8c0c9b484d44b7d2a224ef30cf89",
+  "duration": "6 weeks",
+  "schedule": "Mondays and Wednesdays, 5:30 PM - 7:30 PM",
+  "location": "Online",
+  "prerequisites": ["Basic design principles", "Familiarity with mobile apps"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Introduction to Mobile Design",
+      "content": "Understanding the importance of user-centered design in mobile apps."
+    },
+    {
+      "week": 2,
+      "topic": "Prototyping and Testing",
+      "content": "Creating prototypes and conducting usability testing for mobile apps."
+    }
+  ],
+  "students": [
+    {
+      "id": 501,
+      "name": "Ivy Johnson",
+      "email": "ivy@example.com"
+    },
+    {
+      "id": 502,
+      "name": "Jack Robinson",
+      "email": "jack@example.com"
+    }
+  ]
+}
+,
+{
+  "id": 5,
+  "price":90,
+  "name": "Python for Data Science",
+  "instructor": "Dr. Michael Williams",
+  "description": "Master Python programming for data analysis and machine learning.",
+  "enrollmentStatus": "Closed",
+  "thumbnail": "https://img.freepik.com/free-photo/revenue-operations-collage_23-2150847854.jpg?w=996&t=st=1706705126~exp=1706705726~hmac=1393431ef7cddc445be28eca3bd4c7ef14e07d94bb19b08ca8b897a50f6ce6a6",
+  "duration": "10 weeks",
+  "schedule": "Thursdays and Saturdays, 6:00 PM - 8:00 PM",
+  "location": "Online",
+  "prerequisites": ["Basic Python knowledge", "Understanding of data structures"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Python Basics for Data Science",
+      "content": "Review of Python basics and introduction to data science libraries."
+    },
+    {
+      "week": 2,
+      "topic": "Data Manipulation with Pandas",
+      "content": "Exploring data manipulation and analysis using the Pandas library."
+    }
+  ],
+  "students": [
+    {
+      "id": 601,
+      "name": "Karen Adams",
+      "email": "karen@example.com"
+    },
+    {
+      "id": 602,
+      "name": "Liam Mitchell",
+      "email": "liam@example.com"
+    }
+  ]
+}
+,
+{
+  "id": 6,
+  "price":99,
+  "name": "Cybersecurity Essentials",
+  "instructor": "Dr. Emily Brown",
+  "description": "Explore the fundamental concepts of cybersecurity and protect digital assets.",
+  "enrollmentStatus": "Open",
+  "thumbnail": "https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595831.jpg?w=900&t=st=1706705149~exp=1706705749~hmac=4efdae6af177c8b64875659ca1e3d4da8f960334683460569c695df11bacac3e",
+  "duration": "8 weeks",
+  "schedule": "Tuesdays and Thursdays, 7:00 PM - 9:00 PM",
+  "location": "Online",
+  "prerequisites": ["Basic computer knowledge", "Understanding of networks"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Introduction to Cybersecurity",
+      "content": "Overview of cybersecurity, threats, and security measures."
+    },
+    {
+      "week": 2,
+      "topic": "Network Security",
+      "content": "Exploring techniques for securing computer networks."
+    }
+  ],
+  "students": [
+    {
+      "id": 701,
+      "name": "Olivia White",
+      "email": "olivia@example.com"
+    },
+    {
+      "id": 702,
+      "name": "Peter Thompson",
+      "email": "peter@example.com"
+    }
+  ]
+}
+,
+{
+  "id": 7,
+  "price":150,
+  "name": "Artificial Intelligence in Business",
+  "instructor": "Prof. Alex Miller",
+  "description": "Learn how AI is transforming businesses and gain practical insights for implementation.",
+  "enrollmentStatus": "Open",
+  "thumbnail": "https://img.freepik.com/free-photo/person-using-laptop-using-artificial-intelligence-generate-images_23-2150905301.jpg?w=1060&t=st=1706705194~exp=1706705794~hmac=33bfeb4f887d6cdcc7fc329a2bdd708f0edf8942d205c5dc73e9973255a34842",
+  "duration": "12 weeks",
+  "schedule": "Wednesdays and Fridays, 6:30 PM - 8:30 PM",
+  "location": "Online",
+  "prerequisites": ["Basic understanding of business operations", "Familiarity with AI concepts"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Introduction to AI in Business",
+      "content": "Overview of AI applications and its impact on business."
+    },
+    {
+      "week": 2,
+      "topic": "Implementing AI Strategies",
+      "content": "Strategies for successfully implementing AI in business operations."
+    }
+  ],
+  "students": [
+    {
+      "id": 801,
+      "name": "Sophia Clark",
+      "email": "sophia@example.com"
+    },
+    {
+      "id": 802,
+      "name": "William Davis",
+      "email": "william@example.com"
+    }
+  ]
+}
+,
+{
+  "id": 8,
+  "price":155,
+  "name": "Digital Marketing Strategies",
+  "instructor": "Marketing Expert Sarah Turner",
+  "description": "Master the art of digital marketing and create effective online campaigns.",
+  "enrollmentStatus": "Open",
+  "thumbnail": "https://img.freepik.com/free-photo/marketing-strategy-connting-digital-devices-concept_53876-23053.jpg?w=826&t=st=1706705228~exp=1706705828~hmac=171fa6a1c06d909fc457d1014772e5c551360fb80355a1464c12b239de699d4d",
+  "duration": "6 weeks",
+  "schedule": "Mondays and Thursdays, 7:00 PM - 9:00 PM",
+  "location": "Online",
+  "prerequisites": ["Basic understanding of marketing principles", "Familiarity with online platforms"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Introduction to Digital Marketing",
+      "content": "Overview of digital marketing channels and strategies."
+    },
+    {
+      "week": 2,
+      "topic": "Social Media Marketing",
+      "content": "Creating effective social media marketing campaigns."
+    }
+  ],
+  "students": [
+    {
+      "id": 901,
+      "name": "Emma Wilson",
+      "email": "emma@example.com"
+    },
+    {
+      "id": 902,
+      "name": "James Taylor",
+      "email": "james@example.com"
+    }
+  ]
+}
+,
+{
+  "id": 9,
+  "price":100,
+  "name": "iOS App Development",
+  "instructor": "Dr. Michael Turner",
+  "description": "Learn the essentials of iOS app development and build your own applications.",
+  "enrollmentStatus": "Open",
+  "thumbnail": "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051191.jpg?size=626&ext=jpg",
+  "duration": "10 weeks",
+  "schedule": "Tuesdays and Fridays, 6:30 PM - 8:30 PM",
+  "location": "Online",
+  "prerequisites": ["Basic programming knowledge", "Familiarity with Swift"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Introduction to iOS Development",
+      "content": "Overview of iOS development tools and basic concepts."
+    },
+    {
+      "week": 2,
+      "topic": "Building UI with SwiftUI",
+      "content": "Creating user interfaces using SwiftUI framework."
+    }
+  ],
+  "students": [
+    {
+      "id": 1001,
+      "name": "Aiden Smith",
+      "email": "aiden@example.com"
+    },
+    {
+      "id": 1002,
+      "name": "Sophie Johnson",
+      "email": "sophie@example.com"
+    }
+  ]
+}
+,{
+  "id": 10,
+  "price":200,
+  "name": "Blockchain Fundamentals",
+  "instructor": "Prof. Benjamin Adams",
+  "description": "Explore the principles and applications of blockchain technology.",
+  "enrollmentStatus": "Open",
+  "thumbnail": "https://img.freepik.com/free-vector/crypto-currency-block-chain-bitcoin-3d-physical-golden-bitcoin-with-wireframe-chain-blue-financial-background-blockchain-concept-editable-cryptocurrency-template-vector-illustration_597744-15.jpg?w=900&t=st=1706705322~exp=1706705922~hmac=1a5ece6fcae100e7d70d2c38c3d09ee6a2ca9d46d592e0f9ca315d414f64ba02",
+  "duration": "8 weeks",
+  "schedule": "Wednesdays and Saturdays, 7:00 PM - 9:00 PM",
+  "location": "Online",
+  "prerequisites": ["Basic understanding of computer science", "Familiarity with cryptography"],
+  "syllabus": [
+    {
+      "week": 1,
+      "topic": "Introduction to Blockchain",
+      "content": "Overview of blockchain technology and its decentralized nature."
+    },
+    {
+      "week": 2,
+      "topic": "Smart Contracts",
+      "content": "Understanding and writing smart contracts on blockchain platforms."
+    }
+  ],
+  "students": [
+    {
+      "id": 1101,
+      "name": "Noah Turner",
+      "email": "noah@example.com"
+    },
+    {
+      "id": 1102,
+      "name": "Ava Robinson",
+      "email": "ava@example.com"
+    }
+  ]
+}
+
+
+]
