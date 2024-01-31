@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
-const EnrollCourseCard = () => {
+const EnrollCourseCard = ({ course }) => {
+  console.log(course);
   const [completed, setCompleted] = useState(false);
 
   return (
@@ -8,15 +10,16 @@ const EnrollCourseCard = () => {
       <div className="flex flex-col md:flex-row md:gap-4">
         <div className="w-full md:w-64 h-56 md:h-48">
           <img
-            src="https://demo.edublink.co/wp-content/uploads/2023/05/girl-1.webp"
+            src={course?.thumbnail}
             alt=""
             className="w-full h-full object-cover object-center bg-red-500 rounded-2xl"
           />
         </div>
         <div>
-          <h1 className="text-2xl">Course Name</h1>
+          <h1 className="text-xl">{course?.name}</h1>
           <p className="mt-3">
-            <span className="font-semibold">Instructor: </span>John Doe
+            <span className="font-semibold">Instructor: </span>
+            {course?.instructor}
           </p>
 
           <p>

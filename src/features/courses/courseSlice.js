@@ -5,6 +5,7 @@ import fetchCourses from "./courseApi";
 
 const initialState = {
     courses: [],
+    enrolled: [],
     isLoading: false,
     isError: false,
     error: ""
@@ -15,11 +16,14 @@ export const fetchCourseData = createAsyncThunk("courses/coursesData", async () 
     return courses;
 });
 
-
-
 const courseSlice = createSlice({
     initialState,
     name: "courses",
+    reducers: {
+        enroll: (state, action) => {
+            state.enrolled = [...state.enrolled, action.payload]
+        }
+    },
     extraReducers: (builder) => {
         builder.addCase(fetchCourseData.pending, (state) => {
             state.isLoading = true,
@@ -38,5 +42,5 @@ const courseSlice = createSlice({
     }
 });
 
-
+export const { enroll } = courseSlice.actions;
 export default courseSlice.reducer;

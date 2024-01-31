@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import Accordion from "../components/ui/Accordion";
 import { globalStyles } from "../constants";
-import Button from "./Button";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCourseData } from "../features/courses/courseSlice";
+import { enroll, fetchCourseData } from "../features/courses/courseSlice";
 
 const CourseDetails = () => {
   const { CourseId } = useParams();
@@ -149,7 +148,12 @@ const CourseDetails = () => {
                 {course?.location}
               </li>
             </ul>
-            <Button>Enroll Now</Button>
+            <button
+              className="bg-gradient-to-r from-red-500 hover:from-black  hover:to-red-500 to-black px-7 py-1 text-3xl font-bold text-white mt-10 rounded-full"
+              onClick={() => dispatch(enroll(course))}
+            >
+              Enroll Now
+            </button>
           </aside>
         </div>
       </section>
