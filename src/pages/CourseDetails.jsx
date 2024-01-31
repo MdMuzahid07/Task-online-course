@@ -3,25 +3,19 @@ import Accordion from "../components/ui/Accordion";
 import { globalStyles } from "../constants";
 import Button from "./Button";
 import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCourseData } from "../features/courses/courseSlice";
 
 const CourseDetails = () => {
   const { CourseId } = useParams();
-  const [getCourseData, setGetCourseData] = useState(null);
+  const courses = useSelector((state) => state.courses);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const fetchCourses = async () => {
-      try {
-        const response = await fetch("/public/data.json");
-        const data = await response.json();
-        setGetCourseData(data);
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
-    fetchCourses();
-  }, [CourseId]);
+    dispatch(fetchCourseData());
+  }, [dispatch]);
 
-  const course = getCourseData?.find((course) => course.id == CourseId);
+  const course = courses?.courses?.find((course) => course.id == CourseId);
   console.log(course);
   return (
     <div className="bg-slate-50">

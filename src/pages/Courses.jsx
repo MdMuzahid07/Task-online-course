@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import CourseCard from "../components/ui/CourseCard";
 import Pagination from "../components/ui/Pagination";
 import { globalStyles } from "../constants";
