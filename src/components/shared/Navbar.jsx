@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { navLinks } from "../../constants";
 import Dropdown from "../ui/Dropdown";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCourseData } from "../../features/courses/courseSlice";
+import CourseCard from "../ui/CourseCard";
 
 const styles = {
   btn: "sm:w-9 w-7 sm:h-9 h-7 rounded-full flex justify-center items-center border active:border-red-500",
@@ -10,6 +13,25 @@ const styles = {
 const Navbar = () => {
   const [dropDown, setDropdown] = useState(false);
   const [userDrop, setUserDrop] = useState(false);
+  const [searchDrop, setSearchDrop] = useState(false);
+  const [inputValue, setInputValue] = useState(" ");
+
+  const courses = useSelector((state) => state.courses);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCourseData());
+  }, [dispatch]);
+
+  let filterCourses = courses?.courses?.filter((course) => {
+    const courseName = course?.name?.toLowerCase() || "";
+    const instructorName = course?.instructor?.toLowerCase() || "";
+
+    return (
+      courseName.includes(inputValue.toLowerCase()) ||
+      instructorName.includes(inputValue.toLowerCase())
+    );
+  });
 
   return (
     <nav className="border-b sticky top-0 right-0 bg-white w-full h-16 md:h-20 flex items-center z-50">
@@ -33,8 +55,13 @@ const Navbar = () => {
             </ul>
 
             <div className="flex items-center gap-2 sm:gap-4">
-              <label className="relative" htmlFor="search">
+              <label
+                onClick={() => setSearchDrop(!searchDrop)}
+                className="relative"
+                htmlFor="search"
+              >
                 <input
+                  onChange={(e) => setInputValue(e.target.value)}
                   type="text"
                   className="border border-slate-150 sm:py-1 w-28 sm:w-32 md:w-44 px-4 rounded-full focus:outline-none focus:border-red-500"
                   placeholder="Search"
@@ -56,6 +83,21 @@ const Navbar = () => {
                     />
                   </svg>
                 </span>
+
+                <Dropdown
+                  active={searchDrop}
+                  styles={
+                    "absolute right-0 top-16 rounded-3xl w-full lg:w-[700px] h-full lg:h-[600px] text-left"
+                  }
+                >
+                  <div className="grid lg:grid-cols-2 gap-4">
+                    {inputValue.length >= 2
+                      ? filterCourses?.map((data) => (
+                          <CourseCard key={data?.id} data={data} />
+                        ))
+                      : "Search with course, or instructor name"}
+                  </div>
+                </Dropdown>
               </label>
 
               <button className={styles.btn}>

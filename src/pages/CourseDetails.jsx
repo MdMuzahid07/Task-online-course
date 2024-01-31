@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Accordion from "../components/ui/Accordion";
 import { globalStyles } from "../constants";
 import Button from "./Button";
@@ -16,7 +16,7 @@ const CourseDetails = () => {
   }, [dispatch]);
 
   const course = courses?.courses?.find((course) => course.id == CourseId);
-  console.log(course);
+
   return (
     <div className="bg-slate-50">
       <section className="detailsBg">
